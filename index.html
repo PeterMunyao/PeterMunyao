@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hesed Africa Pty Ltd: Repair and Innovation Center for Electrical and Electronic Systems">
+    <title>HESED AFRICA PTY LTD</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #f5f5dc; /* Cream background */
+            color: #556b2f; /* Golden green for better visibility */
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #cccccc; /* Grey header color */
+            font-size: 2.5em;
+        }
+
+        header p {
+            color: #bdbdbd;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #00bcd4;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 300px;
+            margin-right: 20px;
+            border-radius: 15px; /* Sleek rounded corners */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .item img:hover {
+            transform: scale(2.99); /* Slight zoom effect on hover */
+        }
+
+        .item h3 {
+            color: #cccccc; /* Grey for headers */
+        }
+
+        .item p {
+            color: #556b2f; /* Golden green text color */
+        }
+
+        .price {
+            color: maroon; /* Maroon color for prices */
+            font-style: italic; /* Italicized price */
+            font-weight: bold;
+        }
+
+        footer p {
+            color: #757575;
+        }
+
+        /* Payment and Contact Styles */
+        .payment-section {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .payment-section h2, .contact-section h2 {
+            color: #cccccc; /* Grey headers */
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .item {
+                flex-direction: column;
+            }
+
+            .item img {
+                max-width: 100%;
+                margin-right: 0;
+            }
+
+            footer p {
+                font-size: 0.9em;
+            }
+        }
+
+        /* Style for visitor and click tracking */
+        #visitorCount, #mostClickedItem {
+            color: #00bcd4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HESED AFRICA (PTY) LTD</h1>
+    <p>Your Listening Partner for All Electrical and Electronic Systems</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#partnership">Partnership</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Featured Electronics</h2>
+
+    <div class="item" data-item="Appliances">
+        <img src="appliances.jpg" alt="Appliances">
+        <div>
+            <h3>Appliances</h3>
+            <p>Durable, high-efficient and affordable home appliances for quality modern living.</p>
+            <p class="price">Price: R50.99 - R1,999.99</p>
+        </div>
+    </div>
+
+    <div class="item" data-item="DB">
+        <img src="db.jpg" alt="Distribution Box (DB)">
+        <div>
+            <h3>Distribution Box (DB)</h3>
+            <p>Essential power distribution system and Equipment. 
+            (MCB, MCCB, ACB, Isolators, 3-Ph & 1-Ph, Armoured cables, 
+             SANS rated wiring cables, LED lights e.t.c) for your home and office.</p>
+            <p class="price">Price: R129.99</p>
+        </div>
+    </div>
+
+    <div class="item" data-item="ESP">
+        <img src="esp.jpg" alt="ESP">
+        <div>
+            <h3>ESP</h3>
+            <p>ESP module for IoT applications and automation.</p>
+            <p class="price">Price: R9.99</p>
+        </div>
+    </div>
+
+    <div class="item" data-item="Mars Rover">
+        <img src="mars_rover.jpg" alt="Mars Rover">
+        <div>
+            <h3>Mars Rover</h3>
+            <p>Rover design and Mini Robotic Systems.</p>
+            <p class="price">Price: R299.99</p>
+        </div>
+    </div>
+
+    <div class="item" data-item="Phone">
+        <img src="phone.jpg" alt="Phone">
+        <div>
+            <h3>Phone</h3>
+            <p>Latest smartphone model repair with cutting-edge tools.</p>
+            <p class="price">Price: R499.99</p>
+        </div>
+    </div>
+
+    <div class="item" data-item="Rover">
+        <img src="rover.jpg" alt="Rover">
+        <div>
+            <h3>Rover</h3>
+            <p>Robust and versatile rover for industrial applications.</p>
+            <p class="price">Price: R999.99</p>
+        </div>
+    </div>
+
+    <div class="item" data-item="Home">
+        <img src="home.jpg" alt="Home">
+        <div>
+            <h3>Smart Home System</h3>
+            <p>Fully integrated smart home solution, diagnostics, repair and maintenance in electrical appliances and security.</p>
+            <p class="price">Price: R399.99</p>
+        </div>
+    </div>
+</section>
+
+<section id="partnership">
+    <div class="payment-section">
+        <h2>Partnership and Investment</h2>
+        <p>We invite like-minded entrepreneurs and professionals to join us as shareholders/partners in Hesed Africa Pty Ltd. 
+        Our goal is to innovate, design, and build sustainable solutions and bridge the skills gap in electrical and electronic repairs while promoting sustainability across Africa. 
+        Email: <strong>hesedgrace8@gmail.com</strong> for more information.</p>
+        <p>Cell Phone: <strong>+27719407313 on WhatsApp</strong></p>
+    </div>
+</section>
+
+<!-- Founding Team Section with LinkedIn profiles -->
+<section id="our-team">
+    <h2>Our Team</h2>
+    <div class="team-member">
+        <p>
+            <strong>Peter Munyao</strong> - <a href="https://www.linkedin.com/in/peter-munyao-3251b3a4/" target="_blank">LinkedIn Profile</a>
+        </p>
+    </div>
+    <div class="team-member">
+        <p>
+            <strong>Jean Luc Maurel</strong> - <a href="https://www.linkedin.com/in/jean-luc-maurel-030755261/" target="_blank">LinkedIn Profile</a>
+        </p>
+    </div>
+    <div class="team-member">
+        <p>
+            <strong>Mihir S</strong> - <a href="https://www.linkedin.com/in/mihir-singh-107991298/" target="_blank">LinkedIn Profile</a>
+        </p>
+    </div>
+     <div class="team-member">
+        <p>
+            <strong>Nolusizo M</strong> - <a href= "https://www.linkedin.com/in/nolusizomthembu/" target="_blank">LinkedIn Profile</a>
+        </p>
+    </div>
+
+
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: <strong>hesedgrace8@gmail.com</strong></p>
+    <p>Phone: <strong>+254701667048</strong></p>
+    <p>Address: 67 Manor Drive, Berea, Durban, South Africa</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Hesed Africa Pty Ltd. All rights reserved.</p>
+    <p>Visitors: <span id="visitorCount"></span></p>
+    <p>Most clicked item: <span id="mostClickedItem"></span></p>
+</footer>
+
+<script>
+    // Visitor counter
+    if (localStorage.getItem('visitorCount') === null) {
+        localStorage.setItem('visitorCount', '1');
+    } else {
+        let visitors = parseInt(localStorage.getItem('visitorCount')) + 1;
+        localStorage.setItem('visitorCount', visitors.toString());
+    }
+    document.getElementById('visitorCount').innerText = localStorage.getItem('visitorCount');
+
+    // Click tracking
+    let clickCounts = JSON.parse(localStorage.getItem('clickCounts')) || {};
+
+    document.querySelectorAll('.item').forEach(item => {
+        item.addEventListener('click', function() {
+            let itemName = this.getAttribute('data-item');
+            if (clickCounts[itemName]) {
+                clickCounts[itemName]++;
+            } else {
+                clickCounts[itemName] = 1;
+            }
+
+            // Save click counts to localStorage
+            localStorage.setItem('clickCounts', JSON.stringify(clickCounts));
+
+            // Find the most clicked item
+            let mostClicked = Object.keys(clickCounts).reduce((a, b) => clickCounts[a] > clickCounts[b] ? a : b);
+            document.getElementById('mostClickedItem').innerText = mostClicked;
+        });
+    });
+</script>
+
+</body>
+</html>
